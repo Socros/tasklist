@@ -1,1 +1,1 @@
-release:       ./app.py
+release:       ./manage.py
