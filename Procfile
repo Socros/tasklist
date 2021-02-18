@@ -1,1 +1,1 @@
-release:       ./manage.py
+release:       ./setup.py
