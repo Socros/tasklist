@@ -40,6 +40,7 @@ def updateTodo(todo_toedit):
         return json.dump(todos, json_file, ensure_ascii = False)
 
 
+
 @app.route('/home', methods=['GET', 'POST'])
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -66,6 +67,14 @@ def toggle(id):
 def delete(id):
     deleteTodo(id)
     return redirect(url_for('index'))
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    return render_template('login.html')
+
+@app.route('/register', methods=['GET', 'POST'])
+def login():
+    return render_template('login.html')
 
 
 @app.route('/edit/<id>', methods=['GET', 'POST'])
